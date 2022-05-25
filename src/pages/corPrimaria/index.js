@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios"
+import './index.scss'
 
 export default function Index() {
     
@@ -17,6 +18,7 @@ export default function Index() {
 
     return (
         <main>
+            <div className="cor-cont">
             <h1> Cor Primária </h1>
             <div>
                 Cor: <input type='text' value={cor} onChange={e => setCor(e.target.value)} />
@@ -26,6 +28,7 @@ export default function Index() {
             </div>
             <div>
                 É cor primária? {resposta}
+            </div>
             </div>
         </main>
     )

@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
+import './index.scss'
 
 export default function Index() {
     const [qtdInteiras, setqtdInteiras] = useState(0);
@@ -19,6 +20,7 @@ export default function Index() {
 
     return (
         <main>
+            <div className="cinema-cont">
             <h1>Ingresso</h1>
             <div>
                 Qtd. Inteiras: <input type='text' value={qtdInteiras} onChange={e => setqtdInteiras(Number(e.target.value))} />
@@ -37,6 +39,7 @@ export default function Index() {
             </div>
             <div>
                 <p>O total é R$</p> {total}
+            </div>
             </div>
         </main>
     )

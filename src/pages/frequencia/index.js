@@ -13,6 +13,7 @@ export default function Index() {
     }
     return (
         <main>
+            <div className="cont">
             <h1>Frequencia</h1>
             <div>
                 Texto: <input type='text' value={texto} onChange= {e => setTexto(e.target.value)} />
@@ -25,6 +26,7 @@ export default function Index() {
             </div>
             <div>
                 Frequência: {resposta}
+            </div>
             </div>
         </main>
     )
